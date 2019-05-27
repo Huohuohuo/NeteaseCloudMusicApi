@@ -98,6 +98,7 @@ const createRequest = (method, url, data, options) => {
     }
 
     const answer = { status: 500, body: {}, cookie: [] }
+    headers["X-Real-IP"] = 'huo666.imwork.net';
     const settings = {
       method: method,
       url: url,
